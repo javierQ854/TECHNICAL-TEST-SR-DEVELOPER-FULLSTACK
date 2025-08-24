@@ -3,6 +3,14 @@ using apiProperties.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("mipolitica", policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+    });
+});
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.Configure<MongoDbSettings>(
@@ -21,13 +29,14 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-    app.UseSwaggerUi(option=>
+    app.UseSwaggerUi(option =>
     {
         option.Path = "/swagger";
         option.DocumentPath = "/openapi/v1.json";
     });
 }
 
+app.UseCors("mipolitica");
 app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();
