@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import ObtenerDatos from './Services/Api'
+import {ObtenerDatos} from './Services/Api'
 import Card from './Components/Card'
 import Input from './Components/Input'
 import { useEffect, useState } from 'react'
@@ -70,7 +70,9 @@ function App() {
         {error && <p>Hay un error {error.message}</p>}
         {data.length > 0 ? (
           data.map(dato =>
-          <Card key={dato.id}
+          <Card
+            id={dato.id}
+            key={dato.id}
             usuario={dato.name}
             addres={dato.address}
             year={dato.year}

@@ -1,7 +1,6 @@
 const API_PROPERTIES = "http://localhost:5227/api/Properties"
-const API_PROPERTIES_ID = "http://localhost:5227/api/Properties/filter?name=casa&address=cra&minPrice=1000&maxPrice=2000" 
 
-const ObtenerDatos = async({buscarCasa,buscarDireccion, min,max}) =>
+export const ObtenerDatos = async({buscarCasa,buscarDireccion, min,max}) =>
 {
   const params = new URLSearchParams()
   if(buscarCasa) params.append("name", buscarCasa)
@@ -17,4 +16,7 @@ const ObtenerDatos = async({buscarCasa,buscarDireccion, min,max}) =>
     return Array.isArray(datos) ? datos : [datos]
 }
 
-export default ObtenerDatos
+export const ObtenerPropiedad = () =>{
+  return "Hola"
+}
+
