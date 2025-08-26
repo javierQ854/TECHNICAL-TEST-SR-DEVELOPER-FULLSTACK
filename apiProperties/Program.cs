@@ -36,6 +36,7 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+app.UseStaticFiles();
 app.UseCors("mipolitica");
 app.UseHttpsRedirection();
 app.MapControllers();

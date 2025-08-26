@@ -1,1 +1,22 @@
 @import "tailwindcss";
+/* Flechas Swiper amarillas */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #FFD700 !important; /* amarillo dorado */
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #FFC107; /* amarillo más claro al pasar mouse */
+}
+
+.swiper-pagination-bullet {
+  background-color: #FFD700 !important; /* amarillo */
+  opacity: 1; /* que siempre se vea */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFC107 !important; /* amarillo más claro cuando está activo */
+}
