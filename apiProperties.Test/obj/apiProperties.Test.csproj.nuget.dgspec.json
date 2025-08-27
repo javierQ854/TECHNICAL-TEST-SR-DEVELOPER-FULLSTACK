@@ -1,0 +1,173 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties.Test\\apiProperties.Test.csproj": {}
+  },
+  "projects": {
+    "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties.Test\\apiProperties.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties.Test\\apiProperties.Test.csproj",
+        "projectName": "apiProperties.Test",
+        "projectPath": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties.Test\\apiProperties.Test.csproj",
+        "packagesPath": "C:\\Users\\MONICA LASPRILLA\\.nuget\\packages\\",
+        "outputPath": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MONICA LASPRILLA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\apiProperties.csproj": {
+                "projectPath": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\apiProperties.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.14.1, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.72, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\apiProperties.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\apiProperties.csproj",
+        "projectName": "apiProperties",
+        "projectPath": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\apiProperties.csproj",
+        "packagesPath": "C:\\Users\\MONICA LASPRILLA\\.nuget\\packages\\",
+        "outputPath": "D:\\MONICA\\Escritorio\\Prueba_Tecnica_Million\\apiProperties\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MONICA LASPRILLA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.4.3, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

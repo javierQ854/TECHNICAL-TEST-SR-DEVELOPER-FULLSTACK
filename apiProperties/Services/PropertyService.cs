@@ -17,6 +17,13 @@ public class PropertyService
         _property = database.GetCollection<Property>(setting.Value.PropertiesCollection);
     }
 
+    // Constructor para inyectar una colección mock en tests
+    public PropertyService(IMongoCollection<Property> propertyCollection)
+    {
+        _property = propertyCollection;
+    }
+
+
     public async Task<List<PropertyOwnerDto>> FilterPropertiesWithOwnerAsync(PropertyFilter filter)
     {
         var pipeline = new List<BsonDocument>();
